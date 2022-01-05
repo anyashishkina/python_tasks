@@ -5,7 +5,17 @@ def same_in_row(text: str) -> int:
     :param text: Анализируемый текст
     :return: Максимальное количество идущих подряд **одинаковых** символов
     """
-    pass
+    max_i = 0
+    k = 2
+    for i in range(len(text)-1):
+        if text[i] == text[i+1]:
+            k += 1
+        k = 0
+        if k > max_i:
+            max_i = k
+
+    return max_i
+
 
 
 

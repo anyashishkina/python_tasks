@@ -5,7 +5,15 @@ def frequency_analysis(text: str) -> dict:
     :param text: Анализируемый текст
     :return: Словарь вида {"a":102,"b":213, ..}
     """
-    pass
+    result = 0
+    for i in range(len(text)):
+        if text[i] in key:
+            result += 1
+        else:
+            result = 1
+    if D[text[i]] == result:
+        return(D)
+
 
 
 class bcolors:
