@@ -1,0 +1,6 @@
+def F(n): 
+    if n > 0: 
+        return F(n // 3) 
+        return F(n − 3) 
+ 
+print(F(9))
