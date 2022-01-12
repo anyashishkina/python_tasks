@@ -6,11 +6,12 @@ def same_in_row(text: str) -> int:
     :return: Максимальное количество идущих подряд **одинаковых** символов
     """
     max_i = 0
-    k = 2
+    k = 1
     for i in range(len(text)-1):
         if text[i] == text[i+1]:
             k += 1
-        k = 0
+        else:
+            k = 0
         if k > max_i:
             max_i = k
 
