@@ -1,0 +1,9 @@
+f = open('24_demo.txt')
+s = f.readline()
+max_l = 0
+s1 = 'XYZ'
+for i in range(1,500):
+    s2 = s1*i 
+    if s2 in s:
+        max_l = i 
+print(max_l)
