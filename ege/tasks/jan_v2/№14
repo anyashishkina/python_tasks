@@ -1,0 +1,7 @@
+x = 125 + 25**3 + 5**9
+cnt = 0
+while x > 0:
+    if x % 5 == 0:
+        cnt += 1 
+    x = x // 5 
+print(cnt)
