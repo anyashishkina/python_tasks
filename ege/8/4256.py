@@ -1,9 +1,9 @@
 from itertools import permutations 
 cmd = list(permutations('КУСАТЬ', 5))
 cmd2 = [list(c) for c in cmd]
-k = 0
 def is_right(comb):
-    if comb[0] == 'Ь':
+    k = o
+    if ''.join(comb[0]) == 'Ь':
         return False
     if 'СУК' in comb:
         return False
