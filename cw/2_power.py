@@ -8,8 +8,11 @@ def power(x: int, y: int):
     :param y: целочисленный показатель степени
     :return: результат возведения в степень
     """
-    pass
-
+    z = 1
+    while y > 0:
+        z *= x
+        y -= 1
+    return z 
 
 class bcolors:
     OK = '\033[92m'
