@@ -1,9 +1,11 @@
 f = open('24_demo.txt')
 s = f.readline()
-max_l = 0
-s1 = 'XYZ'
-for i in range(1,500):
-    s2 = s1*i 
-    if s2 in s:
-        max_l = i 
+max_l, cnt = 0, 0
+for i in range(1, len(s)-2):
+    if s[i] == 'X' and s[i+1] == 'Y' and s[i+2] == 'Z':
+        cnt += 1
+        if cnt > max_l:
+            max_l = cnt
+    else:
+        cnt = 1
 print(max_l)
