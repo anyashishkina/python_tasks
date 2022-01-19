@@ -1,0 +1,7 @@
+for n in range(174457, 174506):
+    div = []
+    for d in range(2, n):
+        if n % d == 0:
+            div.append(d)
+    if len(div) == 2:
+        print(div)
