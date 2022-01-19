@@ -1,8 +1,14 @@
-with open('17.txt') as f:
-    s = [int(x) for x in f]
-    d = []
-    cnt = 0
-    for i in range(len(d)-1):
-        if (d[i] * d[i+1] % 15 == 0) and ((d[i] + d[i+1]) % 7 == 0):
-            cnt += 1 
-print(cnt)
+f = open('17 (1).txt')
+d = []
+cnt, max_s, s = 0, 0, 0
+while True:
+    f_cont = f.readline()
+    if f_cont == '':
+        break
+    d.append(int(f_cont))
+for i in range(len(d)-2):
+    if (d[i] * d[i+1])% 15 == 0 and (d[i] + d[i+1])% 7 == 0:
+        cnt += 1 
+        s = d[i] + d[i+1]
+        max_s = max(max_s, s)
+print(cnt, max_s)
