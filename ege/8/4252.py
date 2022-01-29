@@ -1,5 +1,5 @@
 from itertools import permutations
-cmd = list(permutations('ОДЕКОЛОН', 4))
+cmd = list(permutations('ОДЕКОЛОН', 8))
 cmd2 = [list(c) for c in cmd]
 def is_right(comb):
     for i in range(len(comb)-1):
