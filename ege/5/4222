@@ -1,9 +1,9 @@
 for n in range(2, 1000):
     r = n 
-    r = int(hex(r)[2:]) // 2
+    r = hex(r // 2)[2:]
     if n % 4 != 0:
         r = 'F' + str(r) + 'A0'
     else:
         r = '15' +str(r) + 'C'
-    if int(r) < 65536:
+    if int(r, base = 16) < 65536:
         print(n)
