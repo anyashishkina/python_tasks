@@ -1,12 +1,13 @@
 for n in range(10000000, 10000000000):
-    n_s = str(n)
+    r = n
+    n_s = str(r)
     s1 = 0 
     s2 = 0 
-    while n != 0:
-        b = n % 10 
+    while r != 0:
+        b = r % 10 
         if b % 2 == 0:
             s1 += b 
-        n //= 10
+        r //= 10
     for i in range(len(n_s)):
         if (i + 1) % 2 == 0:
             s2 += int(n_s[i])
