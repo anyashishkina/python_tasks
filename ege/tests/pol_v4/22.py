@@ -1,5 +1,5 @@
 cnt = 0
-for x in range(100000, 10000000):
+for x in range(1000000, 100000000):
     L, M = 0, 0
     while x > 0:
         L = L + 1
