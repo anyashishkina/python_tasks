@@ -8,14 +8,14 @@ s, cnt, max_volume = 0, 0, 0
 
 for image in images:
     if image >= 101:
-        while s < (image_volume//2):
+        if s < (image_volume//2):
             s += image
             cnt += 1
-    images = images[index(image):]
+
 
 for image in images:
     if image < 101:
-        while s < image_volume:
+        if s < image_volume:
             s += image
             cnt += 1
             max_volume = max(max_volume, image)
