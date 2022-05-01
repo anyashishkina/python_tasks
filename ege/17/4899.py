@@ -12,7 +12,7 @@ for i in range(len(d)):
         sm += d[i]
 ave = sm / cnt
 cnt2, max_s = 0, 0
-for i in range(len(d)-2):
+for i in range(len(d)-1):
     if (d[i] > ave) or (d[i+1] > ave):
         cnt2 += 1
         s1 = str(abs(d[i]))
