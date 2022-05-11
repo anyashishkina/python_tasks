@@ -11,3 +11,5 @@ for i in range(n):
         cur_pr *= d[j]
         max_pr = max(max_pr, cur_pr)
 print(max_pr)
+
+
