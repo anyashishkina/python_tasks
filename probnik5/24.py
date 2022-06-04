@@ -1,5 +1,5 @@
 f = open('24-171.txt').read()
-strings = f.split('\n')
+strings = f.replace('\n', '')
 
 cur_len, max_len = 1, 0
 
